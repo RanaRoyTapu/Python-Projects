@@ -7,9 +7,9 @@ def guess(x):
     while guess != random_number:
         guess = int(input(f"Guess a number between 1 and {x}: "))
         if guess < random_number:
-            print("wrong guess! too low")
+            print("Sorry guess again! too low")
         elif guess > random_number:
-            print("wrong guess! too high")
+            print("Sorry guess again! too high")
         else:
-            print("Yes right guess.")
+            print(f"Yes! {guess} is the right guess.")
 guess(100)
